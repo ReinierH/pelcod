@@ -5,7 +5,13 @@
 
 typedef int (*Funcptr_t)(unsigned char*, int);
 
+/*globally used functions */
 void pelcod_init(Funcptr_t ptr);
+
+/* Pelcod standard protocol */
+int pelcod_move_right(unsigned char address, int speed);
+
+/* Pelcod extended protocol */
 
 
 
