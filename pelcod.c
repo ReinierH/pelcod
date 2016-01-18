@@ -2,7 +2,7 @@
 * @Author: reinierh
 * @Date:   2016-01-09 17:41:23
 * @Last Modified by:   reinierh
-* @Last Modified time: 2016-01-09 19:30:39
+* @Last Modified time: 2016-01-11 00:32:48
 */
 
 #include "pelcod.h"
@@ -18,6 +18,7 @@ unsigned char calc_checksum(unsigned char* data, int size) {
 	return (total % 256);
 }
 
+/* globally used functions */
 void pelcod_init(Funcptr_t ptr) {
 	send_data = ptr;
 }
@@ -36,6 +37,7 @@ int pelcod_send(unsigned char address, short command, short payload) {
 	send_data(buffer, PELCOD_MSG_SIZE);
 }
 
+/* Standard pelcod functions */
 int pelcod_move_right(unsigned char address, int speed) {
 	
 }
