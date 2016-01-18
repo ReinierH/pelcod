@@ -2,19 +2,18 @@
 #define PELCOD_DEFS_H
 
 /* standard commands */
-#define PELCOD_STD_SENSE
-#define PELCOD_STD_LEFT
-#define PELCOD_STD_RIGHT
-#define PELCOD_STD_UP
-#define PELCOD_STD_DOWN
-#define PELCOD_STD_ZOOM_TELE
-#define PELCOD_STD_ZOOM_WIDE
-#define PELCOD_STD_FOC_FAR
-#define PELCOD_STD_FOC_NEAR
-#define PELCOD_STD_IRIS_CLOSE
-#define PELCOD_STD_IRIS_OPEN
-#define PELCOD_STD_CAM_ON
-#define PELCOD_STD_CAM_OFF
+#define PELCOD_STD_RIGHT			0x0002u
+#define PELCOD_STD_LEFT				0x0004u
+#define PELCOD_STD_UP				0x0008u
+#define PELCOD_STD_DOWN				0x0010u
+#define PELCOD_STD_ZOOM_TELE		0x0020u
+#define PELCOD_STD_ZOOM_WIDE		0x0040u
+#define PELCOD_STD_FOC_FAR			0x0080u
+#define PELCOD_STD_FOC_NEAR			0x0100u
+#define PELCOD_STD_IRIS_OPEN		0x0200u
+#define PELCOD_STD_IRIS_CLOSE		0x0400u	
+#define PELCOD_STD_CAM_ON			0x0800u
+#define PELCOD_STD_SENSE			0x8000u
 
 /* extended commands */
 #define PELCOD_EXT_PRE_SET			0x0003u
